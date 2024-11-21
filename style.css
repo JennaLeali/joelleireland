@@ -61,8 +61,8 @@ body {
     bottom: 20px;            /* Add space between the photo and the footer */
     left: 50%;               /* Center the photo horizontally */
     transform: translateX(-50%); /* Offset to perfectly center */
-    width: 60%;              /* Scale the image to a smaller width */
-    max-width: 400px;        /* Limit the maximum width */
+    width: 80%;              /* Scale the image to be larger */
+    max-width: 600px;        /* Set a larger maximum width */
     height: auto;            /* Maintain aspect ratio */
     z-index: 1000;           /* Ensure it appears above other elements */
   }
