@@ -55,16 +55,16 @@ body {
   .clover:nth-child(9) { top: 25%; left: 5%; }
   .clover:nth-child(10) { top: 65%; left: 75%; }
 
-  /* Family banner styling */
+/* Family banner styling */
 .family-banner {
-    position: fixed; /* Fixed to stay at the bottom */
-    bottom: 0;       /* Align to the bottom of the screen */
-    left: 50%;       /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for the center point */
-    width: auto;     /* Maintain original image width */
-    max-width: 80%;  /* Scale for smaller screens */
-    height: auto;    /* Maintain aspect ratio */
-    z-index: 1000;   /* Ensure it stays above other elements */
+    position: fixed;         /* Fix to the bottom of the viewport */
+    bottom: 20px;            /* Add space between the photo and the footer */
+    left: 50%;               /* Center the photo horizontally */
+    transform: translateX(-50%); /* Offset to perfectly center */
+    width: 60%;              /* Scale the image to a smaller width */
+    max-width: 400px;        /* Limit the maximum width */
+    height: auto;            /* Maintain aspect ratio */
+    z-index: 1000;           /* Ensure it appears above other elements */
   }
 
   /* Footer styling */
