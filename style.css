@@ -1,6 +1,72 @@
+/* General styles */
 body {
-    background-color: #f0f8ff;
     font-family: Arial, sans-serif;
+    background-color: #d7f4d4; /* Light pastel green */
+    margin: 0;
+    padding: 0;
     text-align: center;
+    overflow: hidden; /* Prevent scrollbars due to absolute positioning */
+  }
+
+  /* Header styling */
+  header {
     padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    color: #2c7a2c;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  /* Clover container */
+  .clover-container {
+    position: relative;
+    height: 70vh; /* Take most of the viewport */
+    width: 100%;
+  }
+
+  /* Scatter clovers randomly */
+  .clover {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  /* Clover hover effect */
+  .clover:hover {
+    transform: scale(1.2);
+  }
+
+  /* Manually position clovers */
+  .clover:nth-child(1) { top: 10%; left: 20%; }
+  .clover:nth-child(2) { top: 30%; left: 40%; }
+  .clover:nth-child(3) { top: 15%; left: 70%; }
+  .clover:nth-child(4) { top: 50%; left: 10%; }
+  .clover:nth-child(5) { top: 60%; left: 50%; }
+  .clover:nth-child(6) { top: 40%; left: 80%; }
+  .clover:nth-child(7) { top: 70%; left: 25%; }
+  .clover:nth-child(8) { top: 5%; left: 60%; }
+  .clover:nth-child(9) { top: 25%; left: 5%; }
+  .clover:nth-child(10) { top: 65%; left: 75%; }
+
+  /* Family banner styling */
+  .family-banner {
+    width: 100%; /* Span the full width */
+    height: auto;
+    margin-top: 20px;
+  }
+
+  /* Footer styling */
+  footer {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2c7a2c;
+    color: white;
+    font-size: 0.9rem;
   }
