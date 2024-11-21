@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    overflow: hidden; /* Prevent scrollbars due to absolute positioning */
+    overflow-x: hidden; /* Prevent horizontal scroll */
   }
 
   /* Header styling */
@@ -55,14 +55,14 @@ body {
   .clover:nth-child(9) { top: 25%; left: 5%; }
   .clover:nth-child(10) { top: 65%; left: 75%; }
 
-/* Family banner styling */
-.family-banner {
-    position: fixed;         /* Fix to the bottom of the viewport */
-    bottom: -20px;            /* Move the photo closer to the bottom */
-    left: 50%;               /* Center the photo horizontally */
-    transform: translateX(-50%); /* Offset to perfectly center */
+  /* Family banner styling */
+  .family-banner {
+    position: fixed;         /* Fix the banner to the viewport */
+    bottom: 0px;             /* Align the banner to the bottom of the viewport */
+    left: 50%;               /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
     width: 80%;              /* Keep the larger size */
-    max-width: 600px;        /* Set a maximum width */
+    max-width: 600px;        /* Limit the maximum size */
     height: auto;            /* Maintain aspect ratio */
     z-index: 1000;           /* Ensure it appears above other elements */
   }
@@ -74,4 +74,6 @@ body {
     background-color: #2c7a2c;
     color: white;
     font-size: 0.9rem;
+    position: relative; /* Prevent conflicts with fixed positioning */
+    z-index: 1;        /* Keep footer below the family banner */
   }
