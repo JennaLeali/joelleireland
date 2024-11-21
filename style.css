@@ -58,11 +58,11 @@ body {
 /* Family banner styling */
 .family-banner {
     position: fixed;         /* Fix to the bottom of the viewport */
-    bottom: 20px;            /* Add space between the photo and the footer */
+    bottom: 10px;            /* Move the photo closer to the bottom */
     left: 50%;               /* Center the photo horizontally */
     transform: translateX(-50%); /* Offset to perfectly center */
-    width: 80%;              /* Scale the image to be larger */
-    max-width: 600px;        /* Set a larger maximum width */
+    width: 80%;              /* Keep the larger size */
+    max-width: 600px;        /* Set a maximum width */
     height: auto;            /* Maintain aspect ratio */
     z-index: 1000;           /* Ensure it appears above other elements */
   }
