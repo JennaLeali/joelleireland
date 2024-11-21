@@ -56,10 +56,15 @@ body {
   .clover:nth-child(10) { top: 65%; left: 75%; }
 
   /* Family banner styling */
-  .family-banner {
-    width: 100%; /* Span the full width */
-    height: auto;
-    margin-top: 20px;
+.family-banner {
+    position: fixed; /* Fixed to stay at the bottom */
+    bottom: 0;       /* Align to the bottom of the screen */
+    left: 50%;       /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for the center point */
+    width: auto;     /* Maintain original image width */
+    max-width: 80%;  /* Scale for smaller screens */
+    height: auto;    /* Maintain aspect ratio */
+    z-index: 1000;   /* Ensure it stays above other elements */
   }
 
   /* Footer styling */
