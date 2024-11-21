@@ -58,7 +58,7 @@ body {
 /* Family banner styling */
 .family-banner {
     position: fixed;         /* Fix to the bottom of the viewport */
-    bottom: 0px;            /* Move the photo closer to the bottom */
+    bottom: -20px;            /* Move the photo closer to the bottom */
     left: 50%;               /* Center the photo horizontally */
     transform: translateX(-50%); /* Offset to perfectly center */
     width: 80%;              /* Keep the larger size */
